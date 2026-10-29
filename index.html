@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Signals — Neon Orbit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <img class="cover"
+         src="https://picsum.photos/seed/album/600/600.webp"
+         srcset="https://picsum.photos/seed/album/300/300.webp 300w,
+                 https://picsum.photos/seed/album/600/600.webp 600w"
+         sizes="(max-width: 700px) 60vw, 232px"
+         width="600" height="600" loading="lazy"
+         alt="Обкладинка альбому Night Signals">
+
+    <section class="info">
+      <p class="type">Альбом</p>
+      <h1>Night Signals</h1>
+      <p class="meta"><b>Neon Orbit</b> • 2026 • 6 пісень, 23 хв 49 с</p>
+    </section>
+
+    <div class="actions">
+      <a href="#player" class="play" aria-label="Слухати альбом">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 5v14l11-7z" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+
+    <table class="tracks">
+      <caption class="visually-hidden">Трек-лист альбому Night Signals</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" colspan="2">Назва</th>
+          <th scope="col" aria-label="Тривалість">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active"><td>1</td><td class="col-img"><img src="https://picsum.photos/seed/t1/80/80.webp" width="40" height="40" loading="lazy" alt="Night Signals"></td><td><span class="title">Night Signals</span><span class="artist">Neon Orbit</span></td><td>3:58</td></tr>
+        <tr><td>2</td><td class="col-img"><img src="https://picsum.photos/seed/t2/80/80.webp" width="40" height="40" loading="lazy" alt="Radio Ghost"></td><td><span class="title">Radio Ghost</span><span class="artist">Neon Orbit</span></td><td>4:12</td></tr>
+        <tr><td>3</td><td class="col-img"><img src="https://picsum.photos/seed/t3/80/80.webp" width="40" height="40" loading="lazy" alt="Highway 404"></td><td><span class="title">Highway 404</span><span class="artist">Neon Orbit</span></td><td>3:35</td></tr>
+        <tr><td>4</td><td class="col-img"><img src="https://picsum.photos/seed/t4/80/80.webp" width="40" height="40" loading="lazy" alt="Static Hearts"></td><td><span class="title">Static Hearts</span><span class="artist">Neon Orbit, Mira</span></td><td>3:47</td></tr>
+        <tr><td>5</td><td class="col-img"><img src="https://picsum.photos/seed/t5/80/80.webp" width="40" height="40" loading="lazy" alt="Midnight Loop"></td><td><span class="title">Midnight Loop</span><span class="artist">Neon Orbit</span></td><td>4:20</td></tr>
+        <tr><td>6</td><td class="col-img"><img src="https://picsum.photos/seed/t6/80/80.webp" width="40" height="40" loading="lazy" alt="Home Frequency"></td><td><span class="title">Home Frequency</span><span class="artist">Neon Orbit</span></td><td>3:57</td></tr>
+      </tbody>
+    </table>
+
+    <div class="player" id="player">
+      <img src="https://picsum.photos/seed/t1/80/80.webp" width="56" height="56" loading="lazy" alt="Night Signals">
+      <div>
+        <p class="title">Night Signals</p>
+        <p class="artist">Neon Orbit</p>
+      </div>
+      <audio controls preload="metadata" aria-label="Аудіоплеєр">
+        <source src="assets/track.ogg" type="audio/ogg">
+        <source src="assets/track.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує audio.
+      </audio>
+    </div>
+
+  </main>
+</body>
+</html>
